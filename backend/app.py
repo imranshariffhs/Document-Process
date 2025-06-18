@@ -259,7 +259,10 @@ def process_pdfs():
 @app.route('/api/export/<result_id>', methods=['GET'])
 def export_results(result_id):
     try:
-        result_file = os.path.join(RESULTS_FOLDER, f'{result_id}.json')
+        result_file = os.path.normpath(os.path.join(RESULTS_FOLDER, f'{result_id}.json'))
+        
+        if not result_file.startswith(RESULTS_FOLDER):
+            return jsonify({'error': 'Invalid result ID'}), 400
         
         if not os.path.exists(result_file):
             return jsonify({'error': 'Results not found'}), 404
