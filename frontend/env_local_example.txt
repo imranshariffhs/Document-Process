@@ -1,0 +1,7 @@
+# API Configuration
+NEXT_PUBLIC_API_URL=http://localhost:5000/api
+
+# Application Configuration
+NEXT_PUBLIC_APP_NAME=PDF Data Extractor
+NEXT_PUBLIC_MAX_FILE_SIZE=16777216
+NEXT_PUBLIC_MAX_FILES=5 

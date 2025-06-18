@@ -1,0 +1,45 @@
+{
+  "id": "35a299fa-d30a-452c-8fa5-ee188e353525",
+  "name": "flexo tech quotation",
+  "description": "test",
+  "fields": [
+    {
+      "description": "",
+      "name": "quotation number",
+      "required": false,
+      "type": "text"
+    },
+    {
+      "description": "",
+      "name": "GSTIN",
+      "required": false,
+      "type": "text"
+    },
+    {
+      "description": "",
+      "name": "goods description",
+      "required": false,
+      "type": "text"
+    },
+    {
+      "description": "",
+      "name": "total amount",
+      "required": false,
+      "type": "text"
+    },
+    {
+      "description": "",
+      "name": "validity",
+      "required": false,
+      "type": "text"
+    },
+    {
+      "description": "",
+      "name": "delivery",
+      "required": false,
+      "type": "text"
+    }
+  ],
+  "created_at": "2025-06-11T04:58:01.533380",
+  "updated_at": "2025-06-11T05:00:34.186610"
+}

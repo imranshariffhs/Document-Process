@@ -1,0 +1,31 @@
+{
+  "id": "c77646b8-5e9d-4637-bc9a-94a5ed9af29d",
+  "session_id": "97845e0f-9ace-465e-a5d9-b06456ee1fc4",
+  "schema_id": "ba5e903c-22f1-4f8d-a139-97a4c6ab3c12",
+  "schema_name": "TSE-Check-List",
+  "results": [
+    {
+      "filename": "Enquiry_form_-_Gulf_Additives_Revised_11112024.pdf",
+      "data": {
+        "client name": "Gulf Additives LLC",
+        "city": "Rusayd",
+        "pincode": "117",
+        "email": "sushilkumarb@otegroup.com",
+        "cooling water": "Yes",
+        "pneumac air": "Yes",
+        "ip protecon": "Standard IP55",
+        "scope of supply and work": "Any addition please select below,\n**Extruder supplier scope:**\nVolumetric feeder\nWater bath\nAir knife Pelletizer",
+        "machine installaon": "Non hazardous",
+        "power voltage": "440 Voltage 50 Hz",
+        "end product usage": "Extrusion",
+        "end product form": "Granules",
+        "testing method": "ISO",
+        "bench mark": null,
+        "lab trial": "Yes"
+      },
+      "status": "success",
+      "error": null
+    }
+  ],
+  "processed_at": "2025-06-18T07:25:08.845511"
+}
