@@ -221,9 +221,9 @@ def process_pdfs():
             return jsonify({'error': 'PDF processing failed'}), 500
             
         if result.get('status') == 'error':
+            app.logger.error(f"Error during processing: {result}")
             return jsonify({
-                'error': result.get('error', 'Unknown error during processing'),
-                'details': result
+                'error': 'An internal error occurred during processing. Please try again later.'
             }), 500
             
         filename = os.path.basename(result['file_path']).replace(f'{session_id}_', '')
