@@ -205,7 +205,7 @@ def process_single_pdf(file_path, field_definitions):
                 'status': 'error',
                 'data': {field.get('name', ''): None for field in field_definitions},
                 'file_path': file_path,
-                'error': f'Error reading PDF text file: {str(e)}'
+                'error': 'An error occurred while reading the PDF text file.'
             }
 
         # Format field definitions
@@ -229,7 +229,7 @@ def process_single_pdf(file_path, field_definitions):
                 'status': 'error',
                 'data': {field.get('name', ''): None for field in field_definitions},
                 'file_path': file_path,
-                'error': error_msg
+                'error': 'An error occurred while processing the PDF text file.'
             }
         
         # Extract JSON from response

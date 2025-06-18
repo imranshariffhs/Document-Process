@@ -221,9 +221,9 @@ def process_pdfs():
             return jsonify({'error': 'PDF processing failed'}), 500
             
         if result.get('status') == 'error':
+            print(f"Error during PDF processing: {result.get('error', 'Unknown error')}")
             return jsonify({
-                'error': result.get('error', 'Unknown error during processing'),
-                'details': result
+                'error': 'An error occurred during PDF processing. Please try again later.'
             }), 500
             
         filename = os.path.basename(result['file_path']).replace(f'{session_id}_', '')
@@ -268,8 +268,7 @@ def process_pdfs():
     except Exception as e:
         print(f"Error in process_pdfs: {str(e)}")
         return jsonify({
-            'error': 'Internal server error',
-            'details': str(e)
+            'error': 'An internal error has occurred. Please contact support if the issue persists.'
         }), 500
 
 @app.route('/api/export/<result_id>', methods=['GET'])
