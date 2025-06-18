@@ -10,7 +10,7 @@ from langchain_core.messages import HumanMessage
 # ---------- 1. Configuration ----------
 
 # pdf_path = 'pdf/Enquiry form - Gulf Additives (Revised 11112024).pdf'
-os.environ["GOOGLE_API_KEY"] = "AIzaSyA-gySicYa7WFTKWQXz0gZzCahZNn8T0-8"  # Replace with your actual key
+os.environ["GOOGLE_API_KEY"] = os.getenv('GEMINI_API_KEY')  # Replace with your actual key
 llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash")
 
 # ---------- 2. Enhanced PDF to Image Conversion ----------
