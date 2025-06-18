@@ -1,16 +1,32 @@
+import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
+
 from flask import Flask, request, jsonify, send_file
 from flask_cors import CORS
 from werkzeug.utils import secure_filename
-import os
 import json
 import uuid
 from datetime import datetime
 import pandas as pd
 from io import BytesIO
 from pdf_process import process_single_pdf
+import warnings
 
 app = Flask(__name__)
 CORS(app)
+
+# Environment configuration
+ENV = os.getenv('FLASK_ENV', 'production')  # Default to production
+DEBUG = os.getenv('FLASK_DEBUG', '0').lower() in ('true', '1', 't')  # Default to False
+
+if DEBUG:
+    warnings.warn(
+        'WARNING: Debug mode is enabled. This is insecure and should not be used in production!',
+        RuntimeWarning
+    )
 
 # Configuration
 UPLOAD_FOLDER = os.path.abspath('uploads')
@@ -319,4 +335,14 @@ def reset_session(session_id):
         return jsonify({'error': f'Reset failed: {str(e)}'}), 500
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=5000) 
+    # Get port from environment variable with a default of 5000
+    port = int(os.getenv('PORT', 5000))
+    
+    # In production, only bind to localhost
+    host = '127.0.0.1' if ENV == 'production' else '0.0.0.0'
+    
+    app.run(
+        debug=DEBUG,  # Controlled by FLASK_DEBUG env var
+        host=host,    # Bind to localhost in production
+        port=port     # Use PORT env var or default to 5000
+    ) 

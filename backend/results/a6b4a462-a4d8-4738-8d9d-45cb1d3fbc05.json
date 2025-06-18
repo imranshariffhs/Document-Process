@@ -1,0 +1,132 @@
+{
+  "id": "a6b4a462-a4d8-4738-8d9d-45cb1d3fbc05",
+  "session_id": "ed065453-ff85-4370-b7c0-d364d728b384",
+  "schema_id": "9ca18216-b77e-4379-904e-acb3122c7b29",
+  "schema_name": "TSE-Check-List-TableData",
+  "results": [
+    {
+      "filename": "Enquiry_form_-_Gulf_Additives_Revised_11112024.pdf",
+      "data": {
+        "formulation-1": [
+          {
+            "SI": "1",
+            "Raw material Name": "LLDPE",
+            "Bulk density gram/cc": "0.590",
+            "Physical form(Flakes/granules/powder/liquid)": "Powder",
+            "Size in mm/micron/ Cps": null,
+            "Feed rate %": "22.4"
+          },
+          {
+            "SI": "2",
+            "Raw material Name": "CA5",
+            "Bulk density gram/cc": "0.320",
+            "Physical form(Flakes/granules/powder/liquid)": "Powder",
+            "Size in mm/micron/ Cps": null,
+            "Feed rate %": "0.5"
+          },
+          {
+            "SI": "3",
+            "Raw material Name": "a/o",
+            "Bulk density gram/cc": "-",
+            "Physical form(Flakes/granules/powder/liquid)": "Powder",
+            "Size in mm/micron/ Cps": null,
+            "Feed rate %": "0.1"
+          },
+          {
+            "SI": "4",
+            "Raw material Name": "CaCO3",
+            "Bulk density gram/cc": "1.3",
+            "Physical form(Flakes/granules/powder/liquid)": "Powder",
+            "Size in mm/micron/ Cps": null,
+            "Feed rate %": "52"
+          },
+          {
+            "SI": "5",
+            "Raw material Name": "TiO2",
+            "Bulk density gram/cc": "3.65",
+            "Physical form(Flakes/granules/powder/liquid)": "Powder",
+            "Size in mm/micron/ Cps": null,
+            "Feed rate %": "25"
+          },
+          {
+            "SI": "6",
+            "Raw material Name": null,
+            "Bulk density gram/cc": null,
+            "Physical form(Flakes/granules/powder/liquid)": null,
+            "Size in mm/micron/ Cps": null,
+            "Feed rate %": null
+          },
+          {
+            "SI": "7",
+            "Raw material Name": null,
+            "Bulk density gram/cc": null,
+            "Physical form(Flakes/granules/powder/liquid)": null,
+            "Size in mm/micron/ Cps": null,
+            "Feed rate %": null
+          }
+        ],
+        "formulation-2": [
+          {
+            "SI": "1",
+            "Raw material Name": "LLDPE",
+            "Bulk density gram/cc": "0.590",
+            "Physical form(Flakes/granules/powder/liquid)": "Powder",
+            "Size in mm/micron/ Cps": null,
+            "Feed rate %": "37.65"
+          },
+          {
+            "SI": "2",
+            "Raw material Name": "CA5",
+            "Bulk density gram/cc": "0.32",
+            "Physical form(Flakes/granules/powder/liquid)": "Powder",
+            "Size in mm/micron/ Cps": null,
+            "Feed rate %": "0.5"
+          },
+          {
+            "SI": "3",
+            "Raw material Name": "a/o",
+            "Bulk density gram/cc": "-",
+            "Physical form(Flakes/granules/powder/liquid)": "Powder",
+            "Size in mm/micron/ Cps": null,
+            "Feed rate %": "0.1"
+          },
+          {
+            "SI": "4",
+            "Raw material Name": "CaCO3",
+            "Bulk density gram/cc": "1.3",
+            "Physical form(Flakes/granules/powder/liquid)": "Powder",
+            "Size in mm/micron/ Cps": null,
+            "Feed rate %": "30"
+          },
+          {
+            "SI": "5",
+            "Raw material Name": "Red 53:1",
+            "Bulk density gram/cc": "1.5",
+            "Physical form(Flakes/granules/powder/liquid)": "Powder",
+            "Size in mm/micron/ Cps": null,
+            "Feed rate %": "18.25"
+          },
+          {
+            "SI": "6",
+            "Raw material Name": "Red 57:1",
+            "Bulk density gram/cc": "1.5",
+            "Physical form(Flakes/granules/powder/liquid)": "Powder",
+            "Size in mm/micron/ Cps": null,
+            "Feed rate %": "3.5"
+          },
+          {
+            "SI": "7",
+            "Raw material Name": "Wax",
+            "Bulk density gram/cc": "0.6",
+            "Physical form(Flakes/granules/powder/liquid)": "Powder",
+            "Size in mm/micron/ Cps": null,
+            "Feed rate %": "10"
+          }
+        ]
+      },
+      "status": "success",
+      "error": null
+    }
+  ],
+  "processed_at": "2025-06-18T09:08:34.006382"
+}

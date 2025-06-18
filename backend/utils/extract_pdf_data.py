@@ -1,4 +1,5 @@
 import os
+from dotenv import load_dotenv
 import base64
 import time
 import json
@@ -9,8 +10,29 @@ from langchain_core.messages import HumanMessage
 
 # ---------- 1. Configuration ----------
 
-# pdf_path = 'pdf/Enquiry form - Gulf Additives (Revised 11112024).pdf'
-os.environ["GOOGLE_API_KEY"] = os.getenv('GEMINI_API_KEY')  # Replace with your actual key
+# Load environment variables
+load_dotenv()
+
+# Check for API key and provide helpful error message if missing
+GEMINI_API_KEY = os.getenv('GEMINI_API_KEY')
+if not GEMINI_API_KEY:
+    # Try to load from parent directory's .env file
+    parent_env_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), '.env')
+    if os.path.exists(parent_env_path):
+        from dotenv import load_dotenv
+        load_dotenv(parent_env_path)
+        GEMINI_API_KEY = os.getenv('GEMINI_API_KEY')
+
+if not GEMINI_API_KEY:
+    raise ValueError(
+        "GEMINI_API_KEY environment variable is not set. "
+        "Please create a .env file in the backend directory with: GEMINI_API_KEY=your-api-key-here"
+    )
+
+# Set Google API key from Gemini key
+os.environ["GOOGLE_API_KEY"] = GEMINI_API_KEY
+
+# Initialize LLM
 llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash")
 
 # ---------- 2. Enhanced PDF to Image Conversion ----------

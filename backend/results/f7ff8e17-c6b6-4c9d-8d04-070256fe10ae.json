@@ -1,0 +1,31 @@
+{
+  "id": "f7ff8e17-c6b6-4c9d-8d04-070256fe10ae",
+  "session_id": "ed065453-ff85-4370-b7c0-d364d728b384",
+  "schema_id": "ba5e903c-22f1-4f8d-a139-97a4c6ab3c12",
+  "schema_name": "TSE-Check-List",
+  "results": [
+    {
+      "filename": "Enquiry_form_-_Gulf_Additives_Revised_11112024.pdf",
+      "data": {
+        "client name": "Gulf Additives LLC",
+        "city": "Rusayd",
+        "pincode": "117",
+        "email": "sushilkumarb@otegroup.com",
+        "cooling water": "Yes",
+        "pneumac air": "Yes",
+        "ip protecon": "Standard IP55",
+        "scope of supply and work": null,
+        "machine installaon": "Non hazardous",
+        "power voltage": "440 Voltage 50 Hz",
+        "end product usage": "Extrusion",
+        "end product form": "Granules",
+        "testing method": "ISO",
+        "bench mark": null,
+        "lab trial": "Yes"
+      },
+      "status": "success",
+      "error": null
+    }
+  ],
+  "processed_at": "2025-06-18T09:07:14.927452"
+}
