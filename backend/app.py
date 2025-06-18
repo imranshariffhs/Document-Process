@@ -257,20 +257,18 @@ def process_pdfs():
                 json.dump(result_data, f, indent=2)
             print(f"Successfully saved results to: {result_file}")
         except Exception as e:
-            print(f"Error saving results: {str(e)}")
+            print(f"Error saving results: {str(e)}")  # Log the exception details
             return jsonify({
-                'error': 'Failed to save results',
-                'details': str(e)
-            }), 500
+                'error': 'Failed to save results'
+            }), 500  # Return a generic error message to the user
         
         return jsonify(result_data), 200
         
     except Exception as e:
-        print(f"Error in process_pdfs: {str(e)}")
+        print(f"Error in process_pdfs: {str(e)}")  # Log the exception details
         return jsonify({
-            'error': 'Internal server error',
-            'details': str(e)
-        }), 500
+            'error': 'Internal server error'
+        }), 500  # Return a generic error message to the user
 
 @app.route('/api/export/<result_id>', methods=['GET'])
 def export_results(result_id):
